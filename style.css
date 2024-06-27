@@ -148,6 +148,7 @@ nav ul li a:hover {
 .category {
     text-align: center;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .category:hover {
