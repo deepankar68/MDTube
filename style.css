@@ -4,43 +4,41 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f2f2f2;
 }
 
-/* Width, height, and color of the scrollbar track */
+/* Scrollbar styles */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
-  
-/* Color of the scrollbar handle */
+
 ::-webkit-scrollbar-thumb {
     background-color: #888;
-    border-radius: 5px; /* Roundness of the handle */
+    border-radius: 5px;
 }
-  
-/* When the scrollbar is hovered */
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
-  
-/* Styles for the scrollbar track (not the handle) */
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 10px; /* Roundness of the track */
+    border-radius: 10px;
 }
-  
-/* Styles for the scrollbar corner */
+
 ::-webkit-scrollbar-corner {
     background: #f1f1f1;
 }
-  
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -55,17 +53,42 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 header .logo h1 {
     font-size: 1.8rem;
     margin: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a {
@@ -75,13 +98,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    font-size: 1rem;
 }
 
 .search {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.search.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
 }
 
 .search input[type="text"] {
@@ -179,13 +215,13 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movie:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .movie img {
@@ -242,7 +278,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    text-decoration: underline;
+    font-size: 1rem;
 }
 
 .footer-bottom {
@@ -258,9 +294,22 @@ footer {
         align-items: flex-start;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
     nav ul {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     .search {
@@ -272,7 +321,8 @@ footer {
         flex-grow: 1;
     }
 
-    .category-grid, .movie-grid {
+    .category-grid,
+    .movie-grid {
         grid-template-columns: 1fr;
     }
 

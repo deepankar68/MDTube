@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDTube | Free Movies, Anime Download</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>MDTube</h1>
+            
+            <div class="search sticky">
+                <div><input type="text" placeholder="Search...">
+                    <button><i class="ri-search-line"></i></button></div>
+                
+                <div class="logo">
+                    <h1>MDTube</h1>
+                </div>
+                <nav>
+                    <ul id="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Latest Movies</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Latest Movies</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="search">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-            </div>
+            
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h2>Explore and Download Free Movies!</h2>
-            <a href="#" class="cta-button">Browse Movies</a>
+            <h2>Explore and Download Free Animes, Movies and web series!</h2>
+            <a href="#" class="cta-button">Sign Up!</a>
         </div>
     </section>
 
@@ -38,18 +50,17 @@
         <div class="container">
             <div class="category-grid">
                 <div class="category">
-                    <img src="https://media.designrush.com/tinymce_images/205891/conversions/6.-Ava-content.jpg" alt="Action">
-                    <h3>Action</h3>
+                    <img src="https://demonslayer-anime.com/hta/assets/img/img_kv.jpg" alt="Action">
+                    <h3>Anime</h3>
                 </div>
                 <div class="category">
-                    <img src="https://d29rinwu2hi5i3.cloudfront.net/article_media/638425b8-a178-49c4-9918-f9d450be926d/final.jpg" alt="Comedy">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzgzYjZjYzMtNjcyYy00NWI3LTg1NDItOTMzMzdhMjhjNWExXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_.jpg" alt="Comedy">
                     <h3>Comedy</h3>
                 </div>
                 <div class="category">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/drama-movie-poster-template-design-aca536dd594f745b32bee67980c8690d_screen.jpg?ts=1698747465" alt="Drama">
+                    <img src="https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==" alt="Drama">
                     <h3>Drama</h3>
                 </div>
-                <!-- Add more categories as needed -->
             </div>
             
             <div class="featured-movies">
@@ -65,7 +76,6 @@
                         <h3>Kalki 2898 AD</h3>
                         <p>Kalki 2898 AD (pronounced [kə.l.kɪ]) is an upcoming 2024 Indian epic dystopian science fiction action film written and directed by Nag Ashwin. Produced by C. Aswani Dutt under Vyjayanthi Movies, it was shot primarily in Telugu with some scenes re-shot in Hindi. Inspired by Hindu scriptures, the film is set in a post-apocalyptic world, in the year 2898 AD. The film features Prabhas in the lead role with an ensemble cast including Amitabh Bachchan, Kamal Haasan, Deepika Padukone, Disha Patani, and Brahmanandam in prominent roles.</p>
                     </div>
-                    <!-- Add more featured movies as needed -->
                 </div>
             </div>
         </div>
@@ -89,9 +99,9 @@
                 <div class="footer-section social">
                     <h3>Follow Us</h3>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/deepankar____x/" target="_blank">Instagram</a></li>
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-x-fill"></i></a></li>
+                        <li><a href="https://www.instagram.com/deepankar____x/" target="_blank"><i class="ri-instagram-line"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -100,5 +110,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
