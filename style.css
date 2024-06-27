@@ -1,0 +1,238 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+/* Width, height, and color of the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Color of the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px; /* Roundness of the handle */
+  }
+  
+  /* When the scrollbar is hovered */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* Styles for the scrollbar track (not the handle) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; /* Roundness of the track */
+  }
+  
+  /* Styles for the scrollbar corner */
+  ::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }
+  
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 20vh;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    float: right;
+    margin-top: 10px;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search button:hover {
+    background-color: #45a049;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/premium-vector/abstract-modern-dark-banner-background-with-rainbow-colorful-line_105555-115.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.features {
+    padding: 40px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.featured-movies {
+    margin-top: 40px;
+}
+
+.movie {
+    margin-bottom: 30px;
+}
+
+.movie img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.movie p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.6rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
