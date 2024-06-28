@@ -39,12 +39,7 @@ body {
     background: #f1f1f1;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 .logo img {
     width: 80px;
@@ -146,7 +141,7 @@ nav ul li a:hover {
 
 .hero h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-top: 70px;
     color: #fff;
 }
 
@@ -287,12 +282,12 @@ footer {
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        background-color: #62cfc2;
         align-items: flex-start;
     }
 
     .logo img {
-        width: 120px;
+        width: 80px;
     }
 
     .search input[type="text"] {
@@ -328,7 +323,7 @@ footer {
 
     .search {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .search input[type="text"] {
