@@ -46,7 +46,6 @@ body {
     padding: 20px;
 }
 
-
 .logo img {
     width: 80px;
     height: 80px;
@@ -116,6 +115,7 @@ nav ul li a:hover {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    flex-grow: 1;
 }
 
 .search button {
@@ -137,13 +137,11 @@ nav ul li a:hover {
     background-image: url('imgs/image.webp');
     background-size: cover;
     background-position: center;
-    /* filter: brightness(50%); */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 100px 0;
-    
 }
 
 .hero h2 {
@@ -166,7 +164,6 @@ nav ul li a:hover {
 .cta-button:hover {
     background-color: #45a049;
 }
-
 
 .features {
     padding: 40px 0;
@@ -236,14 +233,14 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.movie:hover{
+.movie:hover {
     transform: scale(1.05);
 }
 
 footer {
     background-color: #f8ae01;
     color: #223a5b;
-    padding: 10px 0
+    padding: 10px 0;
 }
 
 .footer-content {
@@ -296,7 +293,6 @@ footer {
 
     .logo img {
         width: 120px;
-        /* Adjust for smaller screens */
     }
 
     .hamburger {
@@ -308,9 +304,10 @@ footer {
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 40px;
-        right: 0;
-        width: 100%;
+        top: 246%;
+        right: -327%;
+        width: 548%;
+        background: #62cfc2;
     }
 
     nav ul.active {
@@ -381,17 +378,20 @@ footer {
     }
 
     .logo img {
-        width: 100px; /* Adjust for very small screens */
+        width: 100px;
     }
 
     .search input[type="text"] {
-        padding: 6px;
-        font-size: 0.8rem;
+        display: none;
+    }
+
+    .search.show input[type="text"] {
+        display: block;
+        width: 100%;
     }
 
     .search button {
-        padding: 6px 10px;
-        font-size: 0.8rem;
+        display: block;
     }
 
     nav ul li a {
