@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: gray;
+    font-weight: 500;
 }
 
 .search {
@@ -293,6 +293,18 @@ footer {
 
     .logo img {
         width: 120px;
+    }
+
+    .search input[type="text"] {
+        display: none;
+        transition: all 0.3s ease;
+    }
+    
+    .search input[type="text"].show {
+        display: block;
+    }
+    .search button {
+        display: block;
     }
 
     .hamburger {

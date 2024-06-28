@@ -1,18 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
     const searchButton = document.querySelector('.search button');
-    const searchBar = document.querySelector('.search input[type="text"]');
+    const searchInput = document.querySelector('.search input[type="text"]');
     const searchContainer = document.querySelector('.search');
 
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+    // Toggle the navigation menu on small screens
+    hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
     });
 
-    searchButton.addEventListener('click', () => {
-        searchContainer.classList.toggle('show');
+    // Add sticky class to search bar on scroll
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            searchContainer.classList.add('sticky');
+        } else {
+            searchContainer.classList.remove('sticky');
+        }
     });
 
-    // Add your existing code here for other functionalities
+    // Toggle search input visibility on search button click
+    searchButton.addEventListener('click', function () {
+        searchInput.classList.toggle('show');
+        searchInput.focus();
+    });
 });
-
