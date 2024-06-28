@@ -39,18 +39,7 @@ body {
     background: #f1f1f1;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: #62cfc2;
-    padding: -1px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 .logo img {
     width: 80px;
@@ -139,25 +128,41 @@ nav ul li a:hover {
     background-color: #45a049;
 }
 
-.hero {
-    background-image: url('imgs/image.webp');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.movie-download {
+    padding: 40px 0;
     text-align: center;
-    padding: 100px 0;
+    background-color: #f2f2f2;
 }
 
-.hero h2 {
-    font-size: 3rem;
-    margin-top: 70px;
-    color: #fff;
+.movie-details {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.cta-button {
+.movie-details img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-details h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #223a5b;
+}
+
+.movie-details p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.download-button {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
@@ -167,85 +172,8 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.download-button:hover {
     background-color: #45a049;
-}
-
-.features {
-    padding: 40px 0;
-}
-
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.category {
-    text-align: center;
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
-.category:hover {
-    transform: scale(1.05);
-}
-
-.category img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.category h3 {
-    margin-top: 10px;
-    font-size: 1.4rem;
-}
-
-.featured-movies {
-    margin-top: 40px;
-}
-
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.movie {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-}
-
-.movie img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.movie h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-.movie p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 10px;
-}
-
-.movie a{
-    text-decoration: none;
-    color: #000;
-}
-
-.movie:hover {
-    transform: scale(1.05);
 }
 
 footer {
@@ -294,7 +222,6 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
-
 
 @media (max-width: 768px) {
     header {
@@ -346,53 +273,39 @@ footer {
         flex-grow: 1;
     }
 
-    .category-grid,
-    .movie-grid {
-        grid-template-columns: 1fr;
+    .movie-details {
+        padding: 15px;
     }
 
-    .hero {
-        padding: 60px 0;
+    .movie-details h1 {
+        font-size: 1.5rem;
     }
 
-    .hero h2 {
-        font-size: 2.5rem;
+    .movie-details p {
+        font-size: 0.9rem;
     }
 
-    .cta-button {
-        font-size: 1rem;
+    .download-button {
         padding: 8px 16px;
+        font-size: 1rem;
     }
 }
 
-
-@media (max-width: 320px) {
-    .hero {
-        padding: 40px 0;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .cta-button {
-        font-size: 0.8rem;
-        padding: 6px 12px;
-    }
-
-    .movie-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .movie img {
+@media (max-width: 480px) {
+    .movie-details img {
         height: 150px;
     }
 
-    .movie h3 {
+    .movie-details h1 {
         font-size: 1rem;
     }
 
-    .movie p {
+    .movie-details p {
+        font-size: 0.8rem;
+    }
+
+    .download-button {
+        padding: 6px 12px;
         font-size: 0.8rem;
     }
 
