@@ -68,7 +68,7 @@ nav {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
-    margin-left: auto;
+    margin-right: 25px;
 }
 
 .hamburger span {
@@ -101,6 +101,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+
 }
 
 .search.sticky {
@@ -113,7 +114,7 @@ nav ul li a:hover {
     padding: -1px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .search input[type="text"] {
@@ -176,9 +177,9 @@ nav ul li a:hover {
 }
 
 .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
 .category {
@@ -192,7 +193,7 @@ nav ul li a:hover {
 }
 
 .category img {
-    width: 100%;
+    width: 100px;
     border-radius: 8px;
 }
 
@@ -204,11 +205,15 @@ nav ul li a:hover {
 .featured-movies {
     margin-top: 40px;
 }
+.featured-movies h2{
+    text-align: center;
+}
 
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
+    justify-items: center;
 }
 
 .movie {
@@ -219,11 +224,12 @@ nav ul li a:hover {
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     text-align: center;
     cursor: pointer;
+    width: 340px;
 }
 
 .movie img {
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: 400px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -259,6 +265,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    gap: 10px;
+    text-align: center;
 }
 
 .footer-section {
@@ -338,7 +346,7 @@ footer {
     }
 
     .search {
-        width: 100%;
+        
         margin-top: 0px;
     }
 
