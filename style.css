@@ -213,7 +213,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('imgs/image.webp');
+    background-image: url('image.webp');
     background-size: cover;
     background-position: center;
     display: flex;
