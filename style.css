@@ -68,7 +68,7 @@ nav {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
 .hamburger span {
@@ -102,6 +102,10 @@ nav ul li a:hover {
     align-items: center;
     gap: 10px;
 
+}
+
+input{
+    width: 150px;
 }
 
 .search.sticky {
