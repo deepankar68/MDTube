@@ -12,7 +12,7 @@
 *
 body {
     line-height: 1.6;
-    background-color: #f2f2f2;
+    background-color: #000000;
 }
 
 
@@ -126,7 +126,7 @@ nav ul li a:hover {
 }
 
 .search button {
-    padding: 8px 15px;
+    padding:1px 7px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -138,6 +138,78 @@ nav ul li a:hover {
 
 .search button:hover {
     background-color: #45a049;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.box {
+    padding: 10px;
+    width: 25%;
+    flex-basis: 25%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #2e2e2e;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
+}
+
+.box .overlay {
+    width: 100%;
+    max-height: 100%;
+    min-height: auto;
+    position: absolute;
+    bottom: -100%;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    left: 0;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.box span {
+    color: orange;
+    display: inline-block;
+    font-weight: bold;
+ 
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box:hover .overlay {
+    bottom: 0%;
+}
+
+.overlay h2 {
+    margin-bottom: 10px;
+}
+
+#search:focus {
+    background-color: white;
+    color: black;
 }
 
 .hero {
@@ -174,84 +246,6 @@ nav ul li a:hover {
 
 .features {
     padding: 40px 0;
-}
-
-.category-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
-}
-
-.category {
-    text-align: center;
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
-.category:hover {
-    transform: scale(1.05);
-}
-
-.category img {
-    width: 100px;
-    border-radius: 8px;
-}
-
-.category h3 {
-    margin-top: 10px;
-    font-size: 1.4rem;
-}
-
-.featured-movies {
-    margin-top: 40px;
-}
-.featured-movies h2{
-    text-align: center;
-}
-
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    justify-items: center;
-}
-
-.movie {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-    width: 340px;
-}
-
-.movie img {
-    width: auto;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.movie h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-.movie p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 10px;
-}
-
-.movie a{
-    text-decoration: none;
-    color: #000;
-}
-
-.movie:hover {
-    transform: scale(1.05);
 }
 
 footer {
@@ -371,6 +365,14 @@ footer {
         font-size: 1rem;
         padding: 8px 16px;
     }
+    .overlay h3,p {
+        visibility: hidden;
+    }
+    .title{
+        font-size: 5px;
+
+    }
+
 }
 
 
