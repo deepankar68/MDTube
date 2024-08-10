@@ -343,7 +343,9 @@ footer {
         
         margin-top: 0px;
     }
-
+    header{
+        justify-content: space-evenly;
+    }
     .search input[type="text"] {
         flex-grow: 1;
     }
@@ -411,6 +413,7 @@ footer {
 
     header {
         padding: 5px 0;
+        justify-content: space-evenly;
     }
 
     .logo img {
